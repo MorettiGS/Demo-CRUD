@@ -1,0 +1,5 @@
+package com.backend.demo.services.exceptions;
+
+public class ObjectNotFoundException {
+
+}

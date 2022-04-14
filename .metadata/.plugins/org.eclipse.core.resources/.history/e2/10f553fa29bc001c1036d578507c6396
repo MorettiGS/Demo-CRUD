@@ -1,0 +1,5 @@
+package com.backend.demo.repositories;
+
+public class ClienteRepository {
+
+}

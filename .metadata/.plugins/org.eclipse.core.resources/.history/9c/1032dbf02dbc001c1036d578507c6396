@@ -1,0 +1,28 @@
+package com.backend.demo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.backend.demo.domain.Cliente;
+import com.backend.demo.repositories.ClienteRepository;
+
+@SpringBootApplication
+public class BackendApplication implements CommandLineRunner{
+
+	@Autowired
+	private ClienteRepository clienteRepository;
+	
+	public static void main(String[] args) {
+		SpringApplication.run(BackendApplication.class, args);
+	}
+	
+	@Override
+	public void run(String... args) throws Exception {
+		
+		Cliente cli1 = new Cliente(null, "Paula", "paulamendes@gmail.com", 550.4);
+		Cliente cli2 = new Cliente(null, "Sasha", "ferreirasasha4@gmail.com", 2100.58);
+		Cliente cli3 = new Cliente(null, "Paula", "gusilva@gmail.com", 35.99);
+	}
+}

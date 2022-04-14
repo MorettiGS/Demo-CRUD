@@ -1,0 +1,21 @@
+package com.backend.demo.resources;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.backend.demo.domain.Cliente;
+
+@RestController
+@RequestMapping(value="/clientes")
+public class ClienteResource {
+	
+	@RequestMapping(method = RequestMethod.GET)
+	public String listar() {
+		
+		Cliente cat1 = new Cliente(1, "Paula");
+		Cliente cat2 = new Cliente(2, "Ronaldo");
+		
+		return "REST funcionando";
+	}
+}

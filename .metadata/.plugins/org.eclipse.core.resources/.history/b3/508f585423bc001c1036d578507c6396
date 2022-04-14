@@ -1,0 +1,5 @@
+package com.backend.demo.resources;
+
+public class ClienteResource {
+
+}

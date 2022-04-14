@@ -1,0 +1,5 @@
+package com.backend.demo.domain;
+
+public class Cliente {
+
+}
