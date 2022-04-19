@@ -23,9 +23,9 @@ public class BackendApplication implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 		
-		Cliente cli1 = new Cliente(null, "Paula", "paulamendes@gmail.com", 550.4);
-		Cliente cli2 = new Cliente(null, "Sasha", "ferreirasasha4@gmail.com", 2100.58);
-		Cliente cli3 = new Cliente(null, "Paula", "gusilva@gmail.com", 35.99);
+		Cliente cli1 = new Cliente(null, "Paula Mendes", "paulamendes@gmail.com", 550.4);
+		Cliente cli2 = new Cliente(null, "Sasha Ferreira dos Santos", "ferreirasasha4@gmail.com", 2100.58);
+		Cliente cli3 = new Cliente(null, "Gustavo da Silva", "gusilva@gmail.com", 35.99);
 		
 		clienteRepository.saveAll(Arrays.asList(cli1,cli2,cli3));
 	}
